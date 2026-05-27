@@ -1,9 +1,15 @@
-const screenDiv = document.querySelector(".screen")
-const iframe = document.createElement("iframe");
+console.log("Code running.");
 
-iframe.src = url;
-iframe.width = "100%";
-iframe.height = "100%";
-iframe.style.border = "none";
+const bar = document.getElementById("bar");
+const screen = document.querySelector(".screen");
 
-screenDiv.appendChild(iframe);
+function run_url() {
+  const iframe = document.createElement("iframe");
+
+  iframe.src = bar.value;
+  iframe.width = "100%";
+  iframe.height = "100%";
+  iframe.style.border = "none";
+
+  screen.appendChild(iframe);
+}
