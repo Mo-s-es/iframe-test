@@ -4,7 +4,7 @@ const body = document.body;
 const top = document.getElementById("top");
 const bar = document.getElementById("bar");
 const theme-button = document.getElementById("theme");
-const screen = document.querySelector(".screen");
+const screen = document.getElementById("screen");
 
 function run_url(url) {
   url = bar.value;
