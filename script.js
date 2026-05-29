@@ -16,8 +16,6 @@ function run_url(url) {
       url = "https://" + url;
     };
   };
-
-  return url;
   
   screen.innerHTML = "";
   
@@ -26,6 +24,8 @@ function run_url(url) {
   iframe.src = url;
 
   screen.appendChild(iframe);
+
+  return url;
 };
 
 let url = run_url(url);
