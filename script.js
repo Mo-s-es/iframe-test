@@ -28,15 +28,13 @@ function run_url(url) {
   screen.appendChild(iframe);
 };
 
-let url = "";
+let url = run_url(url);
 let theme = "dark";
-
-run_url(url);
 
 bar.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
     console.log("URL (" + url + ") entered");
-    run_url(url);
+    url = run_url(url);
   };
 });
 
