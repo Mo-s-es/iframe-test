@@ -7,8 +7,12 @@ function run_url() {
   let url = bar.value;
   
   if (!url.startsWith("https://") && !url.startsWith("http://")) {
-    url = "https://" + url;
-  }
+    if (url == "") {
+      url = "https://example.com";
+    } else {
+      url = "https://" + url;
+    };
+  };
 
   screen.innerHTML = "";
   
@@ -20,10 +24,12 @@ function run_url() {
   iframe.style.border = "none";
 
   screen.appendChild(iframe);
-}
+};
+
+run_url()
 
 bar.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
     run_url();
-  }
+  };
 });
