@@ -1,67 +1,89 @@
 body {
+  align-items: center;
   background-color: #000000;
   margin: 0px;
   padding: 0px;
 }
 
 .top {
+  align-items: center;
   background-color: #000000;
   border-radius: 0px;
+  font-size: 12px;
   height: 12vh;
   margin: 0px;
+  overflow: hidden;
   padding: 0px;
+  text-align: left;
   width: 100vw;
 }
 
 .bar {
   background-color: #888888;
   border-radius: 50%;
+  font-size: 6vh;
   height: 9vh;
   margin: 0px;
+  overflow: hidden;
   padding: 0px;
+  text-align: left;
   width: 46vw;
 }
 
 .theme {
   background-color: #888888;
   border-radius: 50%;
+  font-size: min(6vh, 6vw);
   height: min(9vh, 9vw);
   margin: 0px;
+  overflow: hidden;
   padding: 0px;
+  text-align: center;
   width: min(9vh, 9vw);
 }
 
 .refresh {
   background-color: #888888;
   border-radius: 50%;
+  font-size: min(6vh, 6vw);
   height: min(9vh, 9vw);
   margin: 0px;
+  overflow: hidden;
   padding: 0px;
+  text-align: center;
   width: min(9vh, 9vw);
 }
 
 .back {
   background-color: #888888;
   border-radius: 50%;
+  font-size: min(6vh, 6vw);
   height: min(9vh, 9vw);
   margin: 0px;
+  overflow: hidden;
   padding: 0px;
+  text-align: center;
   width: min(9vh, 9vw);
 }
 
 .forward {
   background-color: #888888;
   border-radius: 50%;
+  font-size: min(6vh, 6vw);
   height: min(9vh, 9vw);
   margin: 0px;
+  overflow: hidden;
   padding: 0px;
+  text-align: center;
   width: min(9vh, 9vw);
 }
 
 .screen {
   background-color: #000000;
+  border-radius: 0px;
   height: 88vh;
   margin: 0px;
+  overflow: hidden;
   padding: 0px;
   width: 100vw;
 }
