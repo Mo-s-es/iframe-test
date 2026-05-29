@@ -20,7 +20,7 @@ body {
 
 .bar {
   background-color: #888888;
-  border-radius: 50%;
+  border-radius: 4.5vh;
   font-size: 6vh;
   height: 9vh;
   margin: 0px;
