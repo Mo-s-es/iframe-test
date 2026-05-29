@@ -41,7 +41,7 @@ bar.addEventListener("keydown", function(event) {
   };
 });
 
-theme.addEventListener("click", function() {
+theme_button.addEventListener("click", function() {
   if (theme == "dark") {
     theme = "light";
     body.style.backgroundColor = "#ffffff";
