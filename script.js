@@ -3,7 +3,7 @@ console.log("Code running.");
 const body = document.body;
 const top = document.getElementById("top");
 const bar = document.getElementById("bar");
-const theme-button = document.getElementById("theme");
+const theme_button = document.getElementById("theme");
 const screen = document.getElementById("screen");
 
 function run_url(url) {
