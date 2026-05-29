@@ -9,6 +9,7 @@ body {
   align-items: center;
   background-color: #000000;
   border-radius: 0px;
+  display: flex;
   font-size: 12px;
   height: 12vh;
   margin: 0px;
@@ -20,7 +21,7 @@ body {
 
 .bar {
   background-color: #888888;
-  border-radius: 4.5vh;
+  border-radius: 4vh;
   font-size: 6vh;
   height: 9vh;
   margin: 0px;
