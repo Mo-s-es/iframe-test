@@ -17,6 +17,8 @@ function run_url(url) {
     };
   };
 
+  return url;
+  
   screen.innerHTML = "";
   
   const iframe = document.createElement("iframe");
