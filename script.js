@@ -1,9 +1,9 @@
 console.log("Code running.");
 
 const body = document.body;
-const top = document.getElementById(".top");
+const top = document.getElementById("top");
 const bar = document.getElementById("bar");
-const theme = document.getElementById("theme");
+const theme-button = document.getElementById("theme");
 const screen = document.querySelector(".screen");
 
 function run_url(url) {
@@ -44,13 +44,13 @@ bar.addEventListener("keydown", function(event) {
 theme.addEventListener("click", function() {
   if (theme == "dark") {
     theme = "light";
-    document.body.style.backgroundColor = #ffffff;
-    document.top.style.backgroundColor = #ffffff;
-    document.screen.style.backgroundColor = #ffffff;
-  } elif (theme == "light") {
+    body.style.backgroundColor = "#ffffff";
+    top.style.backgroundColor = "#ffffff";
+    screen.style.backgroundColor = "#ffffff";
+  } else if (theme == "light") {
     theme = "dark";
-    document.body.style.backgroundColor = #000000;
-    document.top.style.backgroundColor = #000000;
-    document.screen.style.backgroundColor = #000000;
+    body.style.backgroundColor = "#000000";
+    top.style.backgroundColor = "#000000";
+    screen.style.backgroundColor = "#000000";
   };
 });
