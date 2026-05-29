@@ -1,6 +1,7 @@
 body {
   align-items: center;
   background-color: #000000;
+  font-family: arial;
   margin: 0px;
   padding: 0px;
 }
@@ -87,4 +88,10 @@ body {
   overflow: hidden;
   padding: 0px;
   width: 100vw;
+}
+
+.screen iframe {
+  border: none;
+  height: 100%;
+  width: 100%;
 }
