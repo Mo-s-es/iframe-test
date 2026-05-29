@@ -6,6 +6,12 @@ const screen = document.querySelector(".screen");
 function run_url() {
   let url = bar.value;
   
+  if (!url.startsWith("https://") && !url.startsWith("http://")) {
+    url = "https://" + url;
+  }
+
+  screen.innerHTML = "";
+  
   const iframe = document.createElement("iframe");
   
   iframe.src = url;
