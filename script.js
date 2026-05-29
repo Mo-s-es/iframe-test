@@ -22,9 +22,6 @@ function run_url(url) {
   const iframe = document.createElement("iframe");
   
   iframe.src = url;
-  iframe.width = "100%";
-  iframe.height = "100%";
-  iframe.style.border = "none";
 
   screen.appendChild(iframe);
 };
@@ -37,7 +34,7 @@ run_url(url);
 bar.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
     console.log("URL (" + url + ") entered");
-    run_url();
+    run_url(url);
   };
 });
 
@@ -47,10 +44,12 @@ theme_button.addEventListener("click", function() {
     body.style.backgroundColor = "#ffffff";
     top.style.backgroundColor = "#ffffff";
     screen.style.backgroundColor = "#ffffff";
+    console.log("Theme changed to light.")
   } else if (theme == "light") {
     theme = "dark";
     body.style.backgroundColor = "#000000";
     top.style.backgroundColor = "#000000";
     screen.style.backgroundColor = "#000000";
+    console.log("Theme changed to dark.")
   };
 });
