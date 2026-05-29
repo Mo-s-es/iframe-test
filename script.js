@@ -28,8 +28,10 @@ function run_url(url) {
   return url;
 };
 
-let url = run_url(url);
+let url = "";
 let theme = "dark";
+
+url = run_url(url);
 
 bar.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
