@@ -6,7 +6,7 @@ const bar = document.getElementById("bar");
 const theme_button = document.getElementById("theme");
 const screen = document.getElementById("screen");
 
-function run_url(url) {
+function run_url() {
   url = bar.value;
   
   if (!url.startsWith("https://") && !url.startsWith("http://")) {
@@ -28,15 +28,13 @@ function run_url(url) {
   return url;
 };
 
-let url = "";
+let url = run_url();
 let theme = "dark";
-
-url = run_url(url);
 
 bar.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
     console.log("URL (" + url + ") entered");
-    url = run_url(url);
+    url = run_url();
   };
 });
 
