@@ -7,13 +7,13 @@ const theme_button = document.getElementById("theme");
 const screen = document.getElementById("screen");
 
 function run_url() {
-  url = bar.value;
+  let new_url = bar.value;
   
-  if (!url.startsWith("https://") && !url.startsWith("http://")) {
-    if (url == "") {
-      url = "https://example.com";
+  if (!new_url.startsWith("https://") && !new_url.startsWith("http://")) {
+    if (new_url == "") {
+      new_url = "https://example.com";
     } else {
-      url = "https://" + url;
+      new_url = "https://" + new_url;
     };
   };
   
@@ -21,11 +21,11 @@ function run_url() {
   
   const iframe = document.createElement("iframe");
   
-  iframe.src = url;
+  iframe.src = new_url;
 
   screen.appendChild(iframe);
 
-  return url;
+  return new_url;
 };
 
 let url = run_url();
